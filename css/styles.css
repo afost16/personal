@@ -313,30 +313,19 @@ img:hover {
   /* Add margin for spacing */
 }
 
-@media only screen and (min-width: 1550px) {
-  /* about page image hoverable text */
-  .learn-more::before {
-    content: "\2190 Barcelona vs Villareal, Camp Nou, Barcelona, Spain 2022";
-    position: absolute;
-    bottom: 200px;
-    right: 30px;
-    font-size: 20px;
-    opacity: 0;
-    max-width: 180px;
-  }
-  
-  .about-right img:hover+.learn-more::before {
-    opacity: 1;
-    /* Make the text visible on hover */
-  }
-}
-
 /* Spacing for each social  */
 .learn-more {
   display: flex;
   padding-right: 5px;
 }
 
+
+@media screen and (max-width: 768px) {
+  img[alt="about"] {
+    max-width: 100%;
+  }
+
+}
 /* Media query for mobile view */
 @media (max-width: 1300px) {
   .about-split {

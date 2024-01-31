@@ -322,7 +322,7 @@ img:hover {
 
 @media screen and (max-width: 768px) {
   img[alt="about"] {
-    max-width: 100%;
+    display: none;
   }
 
 }

@@ -319,7 +319,7 @@ img:hover {
   padding-right: 5px;
 }
 
-
+/* Hide about page image when in mobile view*/
 @media screen and (max-width: 768px) {
   img[alt="about"] {
     display: none;

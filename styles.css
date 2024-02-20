@@ -1,0 +1,549 @@
+/* natural box model */
+html {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  /* Disable text selection for modern browsers */
+  user-select: none;
+
+  /* Disable text selection for older browsers */
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+}
+
+
+/* Reset margin and padding for all elements */
+
+body {
+  overflow: scroll;
+  color: #000000;
+  margin: 0 auto;
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  margin: 0;
+  padding: 0 150px;
+  /* Adjust the padding as needed for the desired space */
+}
+
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body,
+html {
+  min-height: 100%;
+}
+
+
+/* Intro Section of Project */
+
+img[alt="background"] {
+  /* Have image on grayscale filter by default */
+  width: 100%;
+  margin-bottom: 50px;
+}
+
+
+.project-intro {
+  display: flex;
+  margin: 0 auto;
+  /* Center .intro horizontally */
+}
+
+
+.info {
+  width: 50%;
+  /* Set .info to take up the left half of the screen */
+}
+
+
+.info p {
+  /* Make the line spacing smaller */
+  line-height: 20px;
+}
+
+
+.overview {
+  width: 50%;
+  /* Set .overview to take up the right half of the screen */
+}
+
+.proj-row {
+  display: flex;
+  justify-content: space-around;
+  /* Adjust as needed */
+  flex-wrap: wrap;
+  margin-top: 45px;
+}
+
+.proj {
+  text-align: center;
+  margin-top: 20px;
+  flex: 1;
+  /* Adjust as needed, considering the margin */
+  box-sizing: border-box;
+  /* Add box-sizing to include padding and border in width calculation */
+}
+
+
+/* Size of image */
+.proj img {
+  width: 500px;
+  height: 500px;
+ /* border: 1px solid black;*/
+}
+
+/* Make images project images smaller when in mobile view */
+@media screen and (max-width: 768px) {
+  .proj img {
+    max-width: 100%;
+    height: auto;    
+  }
+}
+
+.proj a {
+  text-decoration: none;
+  display: block;
+  /* Make the entire project a clickable block */
+}
+
+/* Media query for small screens (max-width: 768px) */
+@media screen and (max-width: 768px) {
+  .proj {
+    flex-basis: calc(100% - 40px);
+    /* Full width with margin on mobile */
+    max-width: none;
+  }
+}
+
+/* Media query for larger screens (min-width: 769px) */
+@media screen and (min-width: 769px) {
+  .proj {
+    flex-basis: calc(50% - 40px);
+    /* Two projects in a row with some spacing */
+    max-width: none;
+  }
+}
+
+.project {
+  margin-top: 90px;
+}
+
+.project h1 {
+  font-size: 60px;
+  font-weight: 500;
+  letter-spacing: 6px;
+}
+
+.project h2 {
+  font-size: 20px;
+  margin-bottom: 15px;
+  font-weight: bolder;
+}
+
+#hopkeys h1 {
+  color: #52bf6f;
+}
+
+.project h3 {
+  font-size: 16px;
+}
+
+.project h4 {
+  font-size: 18px;
+  font-weight: bolder;
+}
+
+.project li {
+  font-size: 25px;
+  margin-top: 10px;
+}
+
+.project section {
+  margin-top: 50px;
+}
+
+.alex-link {
+  text-decoration: none;
+  font-size: 35px;
+  font-weight: 900;
+  padding-right: 5px;
+}
+
+
+::selection {
+  background: #e1e1e1;
+}
+
+/* global fonts */
+
+h1 {
+  font-size: 75px;
+  margin-bottom: 30px;
+}
+
+h2 {
+  font-size: 40px;
+  font-weight: 700;
+}
+
+
+h3 {
+  font-size: 28px;
+  line-height: 156%;
+  font-weight: 400;
+  margin-bottom: 25px;
+}
+
+h3 a {
+  text-decoration: underline;
+}
+
+h4 {
+  font-size: 20px;
+  line-height: 156%;
+  font-weight: 300;
+}
+
+h5 {
+  font-size: 18px;
+  line-height: 156%;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+
+.hobbies li {
+  margin-top: 25px;
+  list-style-type: none;
+}
+
+p {
+  font-size: 16px;
+  line-height: 28px;
+  margin-bottom: 10px;
+}
+
+p a {
+  text-decoration: underline;
+}
+
+ul {
+  margin-top: 10px;
+}
+
+/* ABOUT PAGE*/
+img {
+  width: 500px;
+  height: auto;
+  border-radius: 8px;
+  margin-top: 30px;
+}
+
+img[alt="headshot"] {
+  /* Have image on grayscale filter by default */
+  filter: grayscale(100%);
+}
+
+#intro {
+  margin-top: 100px;
+  /*border-bottom: black 1.5px solid;*/
+  margin-bottom: 30px;
+}
+
+#intro h3 {
+  margin-bottom: 50px;
+}
+
+
+.view-more {
+  padding-top: 10px;
+}
+
+.view-more h5 {
+  padding-bottom: 10px;
+}
+
+/* Remove the grayscale filter on hover */
+img:hover {
+  filter: grayscale(0);
+}
+
+.about-split {
+  display: flex;
+  width: 100%;
+  margin-top: 80px;
+}
+
+.about-left h2 {
+  margin-bottom: 25px;
+}
+
+.about-left,
+.about-right {
+  flex: 1;
+}
+
+.about-right {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.about-right img {
+  width: 450px;
+  /* Adjust the width as needed */
+  height: auto;
+  margin-bottom: 20px;
+  /* Add margin for spacing */
+}
+
+/* Spacing for each social  */
+.learn-more {
+  display: flex;
+  padding-right: 5px;
+}
+
+/* Hide about page image when in mobile view*/
+@media screen and (max-width: 768px) {
+  img[alt="about"] {
+    display: none;
+  }
+
+}
+/* Media query for mobile view */
+@media (max-width: 1300px) {
+  .about-split {
+    flex-direction: column;
+  }
+
+  .about-left {
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .project-intro {
+    flex-direction: column;
+  }
+
+  .project-intro .info {
+    margin-bottom: 20px;
+  }
+
+  .info,
+  .overview {
+    width: 100%;
+  }
+}
+
+
+/* NAVIGATION */
+body {
+  margin: 0;
+}
+
+nav {
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1000;
+  margin-top: 60px;
+}
+
+.logo {
+  display: block;
+}
+
+.logo img {
+  margin-top: 0px;
+  width: 35px;
+  height: auto;
+}
+
+.logo a {
+  color: black;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.nav-links {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.nav-links li {
+  margin-left: 50px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: black;
+  font-size: 16px;
+}
+
+#project {
+  margin-bottom: 50px;
+}
+
+@media screen and (max-width: 768px) {
+
+  nav {
+    margin-top: 35px;
+  }
+
+  .nav-links li {
+      margin-left: 20px;
+  }
+
+  /* side padding */
+  body {
+    padding: 0px 20px;
+  }
+
+  .content {
+    padding-top: 20px;
+  }
+
+  /* padding for top content */
+  #intro {
+    padding-top: 80px;
+  }
+
+  #about {
+    padding-top: 10px;
+  }
+
+  /* font sizes */
+  h3 {
+    font-size: 25px;
+    line-height: 33px;
+  }
+
+  h1 {
+    font-size: 56px;
+
+  }
+
+  body {
+    overflow: auto;
+  }
+
+  #intro {
+    margin-top: 10px;
+  }
+
+
+}
+
+/* Hide images */
+@media screen and (max-width: 1300px){
+    /* remove images */
+    img[alt="headshot"],
+    img[alt="hat"] {
+      display: none;
+    }
+}
+
+@media screen and (max-width: 700px){
+  .project {
+    padding: 0px;
+  }
+}
+
+
+/* Footer */
+footer {
+  display: flex;
+  justify-content: space-between; /* Push copyright mark to the right */
+  align-items: center; /* Center vertically */
+  margin-top: 100px;
+  margin-bottom: 20px;
+}
+
+.footer-links {
+  display: flex;
+}
+
+.footer-links a {
+  margin-right: 20px; /* Add margin between the links */
+}
+
+footer #copyright {
+  margin-top: 20px;
+  line-height: 0px;
+  margin-bottom: 20px;
+}
+
+a {
+  color: black;
+}
+
+/* Make copyright go below other elements in mobile view */
+@media screen and (max-width: 768px) {
+  footer {
+    flex-direction: column; /* Stack elements vertically in mobile view */
+    text-align: center; /* Center text in the column */
+  }
+
+  .footer-links a {
+    margin-bottom: 10px; /* Add bottom margin for better spacing in mobile view */
+  }
+}
+
+
+/* Growth underline on index page */
+
+.growth-underline {
+  display: inline-block;
+  position: relative;
+  color: #333;
+}
+
+.growth-underline::before {
+  content: '';
+  position: absolute;
+  bottom: -3px;
+  /* Adjust this value to control the distance from the text */
+  left: 0;
+  width: 100%;
+  height: 3px;
+  /* Adjust this value to control the thickness of the line */
+  background: linear-gradient(to right, black, transparent);
+  background-size: 200% 100%;
+  transform: rotate(180deg);
+  /* Flip the line 180 degrees */
+  animation: lineAnimation 4s infinite linear;
+}
+
+@keyframes lineAnimation {
+  0% {
+    background-position: 0 0;
+  }
+
+  100% {
+    background-position: 200% 0;
+  }
+}
+
+
+/* dynamic scrolling animation ease in and out */ 
+/* nav {
+  transition: transform 0.3s ease-in-out;
+}
+
+.nav-hidden {
+  transform: translateY(-50%);
+} */
